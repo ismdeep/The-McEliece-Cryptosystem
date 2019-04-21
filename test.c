@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 //	int w = 45;
 
     int n0 = 2;
-    int p = 500;
+    int p = 512;
     int t = 10;
     int w = 30;
 	
