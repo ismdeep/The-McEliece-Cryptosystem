@@ -15,10 +15,15 @@ int main(int argc, char const *argv[])
 	// int p = 4801;
 	// int w = 90;
 
-	int n0 = 2;
-	int t = 20;
-	int p = 1000;
-	int w = 45;
+//	int n0 = 2;
+//    int p = 1000;
+//    int t = 20;
+//	int w = 45;
+
+    int n0 = 2;
+    int p = 500;
+    int t = 10;
+    int w = 30;
 	
 	printf("Starting Encryption...\n");
 	clock_t start, end;
@@ -32,12 +37,12 @@ int main(int argc, char const *argv[])
 		int z = rand() % 2;
 		set_matrix_element(msg, 0, i, z);
 	}
-
+	print_matrix(msg);
 	bin_matrix v = encrypt(msg, crypt);
-//    print_matrix(v);printf('\n');
+	print_matrix(v);
 	bin_matrix s = decrypt(v, crypt);
-//    print_matrix(s);printf('\n');
-	
+    print_matrix(s);
+
 	if(mat_is_equal(msg, s))
 	{
 		end = clock();
