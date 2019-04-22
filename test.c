@@ -21,9 +21,9 @@ int main(int argc, char const *argv[])
 //	int w = 45;
 
     int n0 = 2;
-    int p = 512;
-    int t = 10;
-    int w = 30;
+    int p = 2048;
+    int t = 35;
+    int w = 90;
 	
 	printf("Starting Encryption...\n");
 	clock_t start, end;
